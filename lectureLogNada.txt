@@ -1,1 +1,32 @@
+2019-09-09
+
+Memory requirements for primitive types
+
+Boolean 1
+Byte    1
+char    2
+int     4
+float   4
+double  8
+object  32
+non-static inner class overhead  8
+
+for example, an array of int of length N need 24 (16 for object, 4 for size, 4 for padding) + 4N
+
+an array of objects of N Date objects uses 24 + 8N ( reference) + 32N (for each object)
+
+Mit alogrithm course
+Lecture 1 17:20 to 63:20
+Lecture 2 first 12 mins
+
+Alogrithm is any well-defined computational procedure that takes some value, as input and produces some value, or set of values as output.
+
+CS 155
+Greedy
+Divide and conquer
+Dynamic programming
+Network flow
+Randomized alogrithm
+and so on
+
 
