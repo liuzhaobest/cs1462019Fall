@@ -5,6 +5,8 @@ Priority queues
 Heap can implement the priority queues in log(n)
 
 A heap is a complete binary tree
+Generally, Heaps can be of two types: Max-Heap and Min-Heap
+Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it's children.
 
 
 A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled
@@ -19,3 +21,57 @@ right child = a[2i+1]
 
 max heap property
 parent bigger than its children (and all its descendants)
+
+height of a heap
+the root has height 0
+height of an n-element heap = int(log2(n))
+
+max and min number of elements in a heap of height h
+
+between 2^h and 2^(h+1) - 1
+
+
+heap operations take log2(n)   what kinds of operations??
+heapify() at most height swap, so log(n)
+
+
+
+
+
+Heapify()
+fix the max heap
+
+swap with the bigger one of its children.
+until the element is bigger than both? 
+
+
+BuildHeap()
+bottom up    only need to heapify the first half of elements
+Heapify() each element       ->nlog(n)??
+from the last element of the array
+
+time complexity nlog(n)??
+No, it is acutally O(n)
+but roughly O(n)  ?? is there a proof here? 
+
+Proof:
+
+the total operations are summation(number of element in each heigh * max number of operation at that height)
+
+
+HeapSort
+first build the heap, then like the merge process from the top which is o(n) and buildHeap is O(n)?
+This does not work because it may need more comparision than merge for example 11  10  7  8  9
+
+1. Build a max heap from the input data.   O(n)
+2. At this point, the largest item is stored at the root of the heap. 
+Replace it with the last item of the heap followed by reducing the size of heap by 1. log(n)
+Finally, heapify the root of tree.
+3. Repeat above steps while size of heap is greater than 1. n
+
+time complexity nlog(n)
+
+heapsort is a nice algorithm, but in practice quicksort usually wins
+
+
+
