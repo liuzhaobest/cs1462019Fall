@@ -1,0 +1,21 @@
+2019-09-09
+Binary heap
+Priority queues
+
+Heap can implement the priority queues in log(n)
+
+A heap is a complete binary tree
+
+
+A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled
+and all nodes are as far left as possible
+
+Heap can be implemented by array
+
+node i = a[i]
+parent = a[i/2]
+left child = a[2i]
+right child = a[2i+1]
+
+max heap property
+parent bigger than its children (and all its descendants)
