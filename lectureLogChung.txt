@@ -75,3 +75,84 @@ heapsort is a nice algorithm, but in practice quicksort usually wins
 
 
 
+2019-9-18
+
+Quick sort
+
+kth smallest, manage an array then O(kn)?
+
+Selction:
+Given n elements from a totally ordered universe, find kth smallest.
+
+minimum: k=1
+maximum: k=n
+
+median:k = int((n+1)/2)
+
+O(n) compares for min or max
+O(nlogn) compared by sorting
+O(n+klogn) compares with a binary heap, better than the O(kn) but need more space? O(n) compare to O(k) and heap structure
+
+take the largest, swap with the last element then heapify. 
+
+
+quick select
+
+T(n) = n + n/2 + n/4 + n/8 + ..... = 2n
+
+
+Inversion pair problem
+
+brute force O(n^2)
+
+merge sort method
+
+O(nlogn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
