@@ -1,1 +1,11 @@
+Example of BST
+
+AVL trees
+2-3 trees
+2-3-4 trees
+B-trees
+
+red-black trees
+skip lists
+treaps
 
