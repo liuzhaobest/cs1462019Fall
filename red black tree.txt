@@ -9,3 +9,22 @@ red-black trees
 skip lists
 treaps
 
+red black properties
+1. each node is either red or black
+2. the root and leaves are all black
+3. every red node has black node, no two red nodes in consequence
+4. all simple paths from a node x to a descendant leave of x have same number of black nodes on them.
+black_height(x)
+does not include x itself.
+
+
+
+at most half of the nodes is red
+
+
+height of red black tree
+
+red-black tree with n keys has height h<=2log(n+1)
+so O(logn)
+
+
