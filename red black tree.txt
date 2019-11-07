@@ -1,3 +1,7 @@
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-10-red-black-trees-rotations-insertions-deletions/
+Lecture 10: Red-black Trees, Rotations, Insertions, Deletions
+MIT  Introduction to Algorithms (SMA 5503)
+
 Example of BST
 
 AVL trees
@@ -55,3 +59,44 @@ Rotation:
 (same as AVL rotation?)
 right rotate and left rotate, if two nodes are involved, we lable the top one
 the revese notation opertaion is left(a) / right(b)
+
+rotation takes O(1) time
+
+
+RB-Insert(x):
+Idea 
+- TreeInsert(x)
+- color it red
+- problem if the partent is red
+- Move the violation up the tree via recoloring, until we can fix the violation via rotation & recoloring
+
+
+
+log(n) time
+RB-Insert(T,x):
+    Tree-Insert(T,x)
+    color[x] red
+    while x not root and color is red
+        if p(x) is the left child of p(p(x))
+            look at another child of p(p(x)) y
+            if y is red  #  case 1
+                we recolor, push down the blackness to the two child
+                continuing on p(p(x))
+            else if y is black
+                if x is the right child of p(x)  # case 2
+                    leftRotation(p(x))  # this will turn our tree to case 3
+                # case 3 run anyway
+                color p(x) black
+                color p(p(x)) red
+                rightRotation(p(p(x))
+
+                
+        else #case b
+            same as before, but reverse the notation of left and right
+     color the root black
+     
+     
+Read deletion in the book and post here.
+                
+            
+
