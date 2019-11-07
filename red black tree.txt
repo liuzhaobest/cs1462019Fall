@@ -28,3 +28,30 @@ red-black tree with n keys has height h<=2log(n+1)
 so O(logn)
 
 
+Proof:
+Merge each red node into its black parent
+2-3-4 tree
+all the leaves have the same depth
+
+every internal node has 2-4 children
+every leaf has same black depth namely black-height(root)
+
+# of leaves in this tree, # of nodes + 1
+in a 2-3-4 tree, the # of leaves is between 2^h to 4^h ( calculating the # of nodes)
+the original tree can have height at most 2h
+original tree height h<= 2 log(n+1)
+
+Queries 
+(search, min, max, successor, predessor) are O(lgn) in a red-black tree
+
+updates
+insert and delete
+
+-BST opertaion
+-color changes
+-restructuring of links via rotations
+
+Rotation:
+(same as AVL rotation?)
+right rotate and left rotate, if two nodes are involved, we lable the top one
+the revese notation opertaion is left(a) / right(b)
