@@ -1,0 +1,23 @@
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-12-skip-lists/
+
+Pugh 1989
+log(n) in expectation with high probability about (1 - n^(-k))
+
+sorted linked list 
+
+make a linked list search faster
+
+2 sorted linked list
+
+L2 store all the elements
+L1 store some subset
+
+links between equal keys in L1 and L2
+
+
+go back till too far and go to the L2 line
+
+
+
+
+get what I need at this point, video time 19:16, tbc
