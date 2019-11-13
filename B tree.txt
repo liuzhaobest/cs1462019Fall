@@ -1,0 +1,48 @@
+https://www.youtube.com/watch?v=C_q5ccN84C8
+B-Tree Tutorial - An Introduction to B-Trees
+Fullstack Academy
+
+
+self balance tree     1972
+
+each node can have more than one keys
+
+left small, mid in range, right large
+
+a B-tree of order M
+every node has at most m children
+a non-leaf node with k children contains k-1 keys
+
+the root has at least two children if it is not a leaf node
+
+every non-leaf node(except root) has at least upperInt(m/2) children
+
+all leaves appear in the same level
+
+
+
+inserting
+if the insert is full
+split the original leaf into 2 leaves
+the median will be promot to the parent
+
+
+we can even create a new root node
+
+
+deleting from a b tree
+
+
+
+When B trees are useful to use 
+whenever you are interfacing with some kind of external memory and the time to access
+the data of a node greatly exceeds the time spent processing that data
+so you can imagine that if you had millions of data points and you couldn't 
+load them all into memory. maybe you just have the root node loaded into memory
+and every time you want to access the children of that node you are having to read from disk and that 
+operation reading from the disk takes a lot more time than much much more time maybe a hundred times
+or a thousand times more than even these complicated operations moving values around
+and also often used when you are doing something like reading a tip from a disk with a database
+or a file system
+
+we may want to read a bunch of information from the disk one time so we may use a b tree of 500 or more 
