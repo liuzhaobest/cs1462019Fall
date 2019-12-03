@@ -1,0 +1,11 @@
+the idea of DP is to memorize the solution of each step
+
+knapsack problem
+
+recurssion with brute force
+
+use dp, memorize and reuse the solution
+
+use a two dimentional array which is O(n*k)
+
+
